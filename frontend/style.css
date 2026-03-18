@@ -1,0 +1,171 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#f6d365,#fda085);
+}
+
+.app{
+width:1100px;
+max-width:95%;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+.search-box{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-bottom:20px;
+flex-wrap:wrap;
+}
+
+.search-box input{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+width:220px;
+}
+
+.search-box button{
+padding:10px 15px;
+border:none;
+background:#1e7bff;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.dashboard-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.full-width{
+grid-column:1 / span 2;
+}
+
+.weather-card{
+background:#f5f6f8;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.chart-section{
+background:#f5f6f8;
+padding:20px;
+border-radius:10px;
+}
+
+.forecast-section{
+background:#f5f6f8;
+padding:20px;
+border-radius:10px;
+}
+
+.forecast-container{
+display:flex;
+justify-content:space-between;
+}
+
+.forecast-card{
+background:white;
+padding:10px;
+border-radius:8px;
+text-align:center;
+width:18%;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.forecast-icon{
+width:50px;
+height:50px;
+}
+
+#map{
+height:250px;
+border-radius:10px;
+}
+
+.aqi-section{
+background:#f5f6f8;
+padding:20px;
+border-radius:10px;
+}
+
+.insight-section{
+background:#f5f6f8;
+padding:20px;
+border-radius:10px;
+}
+
+#history{
+margin-bottom:10px;
+}
+
+.history-item{
+background:#e3e8ff;
+padding:5px 10px;
+border-radius:6px;
+margin-right:5px;
+cursor:pointer;
+font-size:13px;
+}
+
+/* DARK MODE */
+
+body.dark{
+background:linear-gradient(135deg,#1e1e1e,#3a3a3a);
+color:white;
+}
+
+body.dark .app{
+background:#2a2a2a;
+}
+
+body.dark .weather-card,
+body.dark .chart-section,
+body.dark .forecast-section,
+body.dark .aqi-section,
+body.dark .insight-section{
+background:#3a3a3a;
+}
+
+body.dark input{
+background:#555;
+color:white;
+border:none;
+}
+
+body.dark .forecast-card{
+background:#4a4a4a;
+}
+
+@media(max-width:900px){
+
+.dashboard-grid{
+grid-template-columns:1fr;
+}
+
+.full-width{
+grid-column:1;
+}
+
+}

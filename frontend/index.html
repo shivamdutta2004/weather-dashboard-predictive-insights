@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weather Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body class="default">
+
+<div class="app">
+
+<h1>🌤 Weather Dashboard</h1>
+
+<div class="search-box">
+
+<input type="text" id="city" placeholder="Enter city name">
+
+<button onclick="getWeather()">Search</button>
+
+<button onclick="getLocation()">📍 Use My Location</button>
+
+<button onclick="toggleTheme()">🌙 Dark Mode</button>
+
+</div>
+
+<div id="history"></div>
+
+<div class="dashboard-grid">
+
+<div id="weather" class="weather-card">
+
+<p class="placeholder">Search a city to see weather</p>
+
+</div>
+
+<div class="chart-section">
+
+<h3>Temperature Trend</h3>
+
+<canvas id="tempChart"></canvas>
+
+</div>
+
+<div class="forecast-section full-width">
+
+<h3>5 Day Forecast</h3>
+
+<div id="forecast" class="forecast-container"></div>
+
+</div>
+
+<div class="map-section">
+
+<h3>🌍 Weather Map</h3>
+<div id="map"></div>
+
+</div>
+
+<div class="aqi-section">
+
+<h3>🌫 Air Quality Index</h3>
+<div id="aqi"></div>
+
+</div>
+
+<div class="insight-section full-width">
+
+<h3>🔮 Weather Insights</h3>
+
+<div id="insights">
+
+<p>Insights will appear after searching weather.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
