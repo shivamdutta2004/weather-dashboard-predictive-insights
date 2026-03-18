@@ -1,4 +1,4 @@
-const API_KEY = "58e99ac46683e8680356da6a590417d5";
+const API_KEY = "YOUR_API_KEY";
 
 let chartInstance = null;
 let mapInstance = null;
