@@ -27,3 +27,4 @@ const API_KEY = "YOUR_API_KEY";
 ## 👨‍💻 Author
 
 Shivam Dutta ⭐
+🌐 Live: https://shivamdutta2004.github.io/weather-dashboard-predictive-insights/
