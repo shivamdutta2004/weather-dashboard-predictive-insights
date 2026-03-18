@@ -1,25 +1,29 @@
-# Weather Dashboard with Predictive Insights
+# 🌦️ Weather Dashboard
 
-## 📌 Project Description
-This project is a web-based Weather Dashboard that provides real-time weather data, 5-day forecast, air quality index, and predictive insights using OpenWeather API.
+A simple web app to check real-time weather and forecasts.
 
 ## 🚀 Features
-- 🌍 City-based weather search
-- 📍 Current location weather (GPS)
-- 📊 Temperature trend chart
-- 📅 5-day weather forecast
-- 🌫️ Air Quality Index (AQI)
-- 🗺️ Interactive weather map
-- 💡 Weather insights & suggestions
 
-## 🛠️ Technologies Used
-- HTML, CSS, JavaScript
-- OpenWeather API
-- Chart.js
-- Leaflet.js
+✔ Search by city
+✔ Use current location 📍
+✔ Temperature, humidity, wind
+✔ 5-day forecast 📅
+✔ AQI 🌫️ and map 🗺️
 
-## ⚠️ Note
-API key is removed for security reasons.
+## 🛠️ Tech
 
-## 👨‍💻 Developed By
-Shivam Dutta
+HTML • CSS • JavaScript • OpenWeather API
+
+## ▶️ Run
+
+Open in VS Code → Run with Live Server
+
+## 🔑 API Key
+
+Add in `script.js`:
+
+const API_KEY = "YOUR_API_KEY";
+
+## 👨‍💻 Author
+
+Shivam Dutta ⭐
